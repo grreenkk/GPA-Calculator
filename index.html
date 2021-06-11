@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/grid.css.css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <section class="section-form">
+    <div class="row">
+      <h1 class="heading">GPA CALCULATOR</h1>
+    </div>
+    <form action="">
+      <div class="row">
+        <div class="col span-1-of-3">
+            <label for="course_code">Course code</label>
+        </div>
+        <div class="col span-2-of-3">
+          <select name="course_code" id="course_code" placeholder="course_code">
+            <option value="">Course codes</option>
+            <option>erc 220</option>
+            <option>btc 340</option>
+            <option>pol 600</option>
+            <option>dal 150</option>
+            <option>bnb 400</option>
+            <option>eth 200</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-3">
+            <label for="unit">Unit</label>
+        </div>
+        <div class="col span-2-of-3"> 
+          <input type="number" placeholder="unit" id="unit" min="0" max="6">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-3">
+            <label for="grade">Score</label>
+        </div>
+        <div class="col span-2-of-3">
+          <select name="grade" id="grade" placeholder="grades">
+            <option value="">Grades</option>
+            <option value="5">A</option>
+            <option value="4">B</option>
+            <option value="3">C</option>
+            <option value="2">D</option>
+            <option value="1">E</option>
+            <option value="0">F</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-3">
+          <label for="calculate">Lets do this</label>
+        </div>
+        <div class="col span-2-of-3">
+          <input type="submit" value="Submit" id="calculate">
+        </div>
+      </div>
+    </form>
+    
+  </section>
+  <section class="section-table">
+    <div class="row">
+      <table>
+        <tr>
+          <th>Course code</th>
+          <th>Unit</th>
+          <th>Grade</th>
+          <th>Sub-Total</th>
+        </tr>
+      <table>
+    </div>
+  </section>
+  <section class="buttons">
+    <button class='btn calculate-gp'>Calculate</button>
+    <button class='btn clear-table'>clear</button>
+  </section>
+  <section class="section-result">
+    <div class="row">
+      <h1 class="result"></h1>
+    </div>
+    
+  </section>
+
+<script src="js/app.js"></script>
+</body>
+</html>
+

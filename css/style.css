@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f06d06;
+  min-height: 100vh;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.result:after {
+  display: none;
+  content: " ";
+  width: 100px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: rgb(4, 189, 199);
+}
+
+.heading:after {
+  display: block;
+  content: " ";
+  width: 100px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: rgb(4, 189, 199);
+}
+
+.row {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.section-form {
+  width: 60%;
+  margin: auto;
+  font-size: 120%;
+  top: 50px;
+}
+
+input[type="text"],
+input[type="number"],
+#grade,
+#course_code {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  color: #f06d06;
+}
+
+::placeholder {
+  color: #f06d06;
+}
+
+*:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: rgb(4, 189, 199);
+  border: none;
+  padding: 10px 40px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 100px;
+  transition: background-color 0.5s;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(235, 235, 235);
+  color: rgb(9, 215, 226);
+  border: 1px solid rgb(9, 215, 226);
+}
+
+.section-table {
+  margin: 0 auto;
+}
+
+table {
+  margin-top: 10px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: none;
+  text-align: center;
+  padding: 8px;
+}
+
+.buttons {
+  display: none;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin-top: 50px;
+}
+
+.clear-table {
+  float: right;
+  background-color: rgb(248, 50, 50);
+  color: white;
+  margin-right: 185px;
+}
+
+.calculate-gp {
+  background-color: rgb(6, 197, 6);
+  margin-left: 155px;
+}
+
+.ion-close-round {
+  color: white;
+}
+
+.success {
+  background-color: rgb(6, 197, 6);
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.error {
+  background-color: red;
+  color: white;
+}
+
+.result {
+  font-size: 300%;
+}
+
+
+/*  SECTIONS  ============================================================================= */
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  GROUPING  ============================================================================= */
+
+.row {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		/*margin: 1% 0 1% 0%;*/
+        margin: 0;
+	}
+}
+
+
+.span-2-of-3 {
+	width: 66.13%; 
+}
+
+.span-1-of-3 {
+	width: 32.26%; 
+}
+
+
+@media only screen and (max-width: 480px) {
+
+	.span-2-of-3 {
+		width: 100%; 
+	}
+	.span-1-of-3 {
+		width: 100%;
+	}
+}
+
