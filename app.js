@@ -1,3 +1,4 @@
+//Global variables
 const form = document.querySelector('form');
 const course_code = document.getElementById('course_code');
 const unit = document.getElementById('unit');
