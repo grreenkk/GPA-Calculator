@@ -71,6 +71,10 @@ input[type="number"],
   outline: none;
 }
 
+label {
+  font-size: 70%;
+}
+
 input[type="submit"] {
   background-color: rgb(128, 57, 128);
   border: none;
@@ -228,15 +232,19 @@ th {
   }
 
   .clear-table {
-    transform: translate3d(100px, 0px, 0);
+    transform: translate3d(0px, 0px, 0);
     margin: 0;
     padding: 17px 113.5px;
-    margin-top: 14px;
+    margin-top: 110px;
+    width: 100%;
   }
 
   .calculate-gp {
+    position: absolute;
+    right: 85px;
     margin-left: 0px;
-    transform: translate3d(100px, 0px, 0);
+    transform: translate3d(0px, 0px, 0);
+    width: 100%;
   }
 
   .result {
@@ -247,12 +255,26 @@ th {
   }
 }
 
-@media only screen and (max-width: 430px) {
+.calculate-gp {
+  transform: translate3d(85px, 0px, 0);
+}
+
+@media only screen and (max-width: 380px) {
   .clear-table {
-    transform: translate3d(85px, 0px, 0);
+    transform: translate3d(0px, 0px, 0);
+    margin: 0;
+    padding: 17px 113.5px;
+    margin-top: 110px;
+    width: 100%;
   }
 }
 
-.calculate-gp {
-  transform: translate3d(85px, 0px, 0);
+@media only screen and (max-width: 430px) {
+  .clear-table {
+    transform: translate3d(0px, 0px, 0);
+    margin: 0;
+    padding: 17px 113.5px;
+    margin-top: 110px;
+    width: 100%;
+  }
 }
