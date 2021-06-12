@@ -12,6 +12,7 @@ const body = document.querySelector('body');
 const sectionForm = document.querySelector('.section-form');
 const resultAfter = document.querySelector('.result-after');
 loading = document.querySelector('.loading');
+remove_Item = document.querySelector('.remove-item');
 let unitList = [];
 let gradeList = [];
 
@@ -95,16 +96,18 @@ table.addEventListener('click', removeItem);
 function removeItem(e){
   if (e.target.className == 'ion-close-round'){
     e.target.parentElement.parentElement.parentElement.remove();
+
+    let paragraph = message('Items deleted successfully', 'success');
+    sectionForm.insertBefore(paragraph, form);
+  
+    setTimeout(function(){
+      (sectionForm.insertBefore(paragraph, form)).remove();
+    }, 2000); 
+  
+    e.preventDefault();
   };
   
-  let paragraph = message('Items deleted successfully', 'success');
-  sectionForm.insertBefore(paragraph, form);
 
-  setTimeout(function(){
-    (sectionForm.insertBefore(paragraph, form)).remove();
-  }, 2000); 
-
-  e.preventDefault();
 };
 
 
@@ -125,6 +128,8 @@ function removeAllItems(){
   setTimeout(function(){
     (sectionForm.insertBefore(paragraph, form)).remove();
   }, 2000); 
+
+
   
 }
 
