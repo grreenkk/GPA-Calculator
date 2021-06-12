@@ -122,18 +122,18 @@ th {
   border: none;
   cursor: pointer;
   color: white;
-  margin-top: 50px;
 }
 
 .clear-table {
+  margin: 0 auto;
   background-color: rgb(151, 8, 8);
-  margin-left: 330px;
+
   padding: 15px 100px;
 }
 
 .calculate-gp {
   background-color: rgb(3, 121, 3);
-  margin-left: 520px;
+  margin-left: 45px;
   padding: 15px 100px;
 }
 
@@ -324,7 +324,7 @@ th {
     position: absolute;
     right: 85px;
     margin-left: 0px;
-    transform: translate3d(0px, 0px, 0);
+    transform: translate3d(85px, 0px, 0);
     width: 100%;
   }
 
@@ -333,6 +333,30 @@ th {
     width: 50%;
     font-size: 150%;
     text-align: center;
+  }
+
+  input[type="submit"] {
+    margin-top: -10px;
+    width: 100%;
+  }
+
+  label {
+    font-size: 70%;
+    margin-left: 1px;
+  }
+}
+
+@media only screen and (min-width: 931px) {
+  .clear-table {
+    transform: translate3d(700px, -63px, 0);
+    margin: 0;
+    padding: 17px 113.5px;
+    margin-top: 110px;
+  }
+
+  .calculate-gp {
+    margin-left: 0px;
+    transform: translate3d(400px, -62px, 0);
   }
 
   input[type="submit"] {
