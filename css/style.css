@@ -5,9 +5,9 @@
 }
 
 body {
-  background-color: #f06d06;
+  background-color: #ccc;
   min-height: 100vh;
-  color: white;
+  color: rgb(71, 58, 58);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -35,7 +35,7 @@ h1 {
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 20px;
-  background-color: rgb(4, 189, 199);
+  background-color: rgb(128, 57, 128);
 }
 
 .row {
@@ -58,11 +58,13 @@ input[type="number"],
   padding: 7px;
   border-radius: 3px;
   border: 1px solid #ccc;
-  color: #f06d06;
+  color:  black;
+  font-family: "Montserrat", sans-serif;
 }
 
 ::placeholder {
-  color: #f06d06;
+  color: black;
+  font-family: "Montserrat", sans-serif;
 }
 
 *:focus {
@@ -70,7 +72,7 @@ input[type="number"],
 }
 
 input[type="submit"] {
-  background-color: rgb(4, 189, 199);
+  background-color: rgb(128, 57, 128);
   border: none;
   padding: 10px 40px;
   border-radius: 8px;
@@ -119,14 +121,16 @@ th {
 
 .clear-table {
   float: right;
-  background-color: rgb(248, 50, 50);
+  background-color:  rgb(151, 8, 8);
   color: white;
-  margin-right: 185px;
+  margin-right: 580px;
+  padding: 15px 100px
 }
 
 .calculate-gp {
-  background-color: rgb(6, 197, 6);
-  margin-left: 155px;
+  background-color: rgb(3, 121, 3);
+  margin-left: 520px;
+  padding: 15px 100px
 }
 
 .ion-close-round {
@@ -134,7 +138,7 @@ th {
 }
 
 .success {
-  background-color: rgb(6, 197, 6);
+  background-color: rgb(183, 189, 183);
   color: white;
   margin-bottom: 20px;
   text-align: center;
@@ -151,6 +155,10 @@ th {
 
 .result {
   font-size: 300%;
+}
+
+.ion-close-round {
+  color: rgb(151, 8, 8);
 }
 
 .loading img{
@@ -219,4 +227,25 @@ th {
   .span-1-of-3 {
     width: 100%;
   }
+
+   .clear-table {
+    transform: translate3d(-81px, 0px, 0);
+    margin: 0;
+    padding: 17px 113.5px;
+    margin-top: 14px;
+  }
+
+  .calculate-gp {
+    margin-left: 0px; 
+    transform: translate3d(100px, 0px, 0)
+  }
+
+  .result {
+    transform: translate3d(130px, 100px, 0);
+    width: 50%;
+    font-size: 150%;
+    text-align: center
+  }
 }
+
+
