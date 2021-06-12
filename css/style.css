@@ -59,13 +59,12 @@ input[type="number"],
   padding: 7px;
   border-radius: 3px;
   border: none;
-  color: black;
+  color: rgb(139, 139, 139);
   font-family: "Montserrat", sans-serif;
   background-color: #fff;
 }
 
 ::placeholder {
-  color: black;
   font-family: "Montserrat", sans-serif;
 }
 
