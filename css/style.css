@@ -136,7 +136,7 @@ th {
 }
 
 .success {
-  background-color: rgb(183, 189, 183);
+  background-color: rgb(4, 95, 4);
   color: white;
   margin-bottom: 20px;
   text-align: center;
@@ -152,6 +152,7 @@ th {
 }
 
 .result {
+  margin-top: 80px;
   font-size: 300%;
 }
 
@@ -239,10 +240,19 @@ th {
   }
 
   .result {
-    transform: translate3d(105px, 100px, 0);
+    transform: translate3d(105px, 30px, 0);
     width: 50%;
     font-size: 150%;
     text-align: center;
   }
-  
+}
+
+@media only screen and (max-width: 430px) {
+  .clear-table {
+    transform: translate3d(85px, 0px, 0);
+  }
+}
+
+.calculate-gp {
+  transform: translate3d(85px, 0px, 0);
 }
