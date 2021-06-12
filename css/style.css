@@ -346,3 +346,26 @@ th {
     margin-left: 1px;
   }
 }
+
+@media only screen and (max-width: 1280px) {
+  .clear-table {
+  }
+
+  .calculate-gp {
+    background-color: rgb(3, 121, 3);
+    margin-left: 120px;
+    padding: 15px 100px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .clear-table {
+  }
+
+  .calculate-gp {
+    background-color: rgb(3, 121, 3);
+    margin-left: 120px;
+    padding: 15px 100px;
+    text-align: center;
+  }
+}
