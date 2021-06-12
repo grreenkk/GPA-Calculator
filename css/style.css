@@ -144,10 +144,26 @@ th {
 .error {
   background-color: red;
   color: white;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
 }
 
 .result {
   font-size: 300%;
+}
+
+.loading img{
+  margin-top: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  border-radius: 50%;
+}
+
+.loading {
+  display:none;
 }
 
 .section {
