@@ -73,6 +73,7 @@ input[type="number"],
 
 label {
   font-size: 70%;
+  margin-left: 93px;
 }
 
 input[type="submit"] {
@@ -253,6 +254,10 @@ th {
     font-size: 150%;
     text-align: center;
   }
+
+  input[type="submit"] {
+    margin-top: 15px;
+  }
 }
 
 .calculate-gp {
@@ -267,6 +272,10 @@ th {
     margin-top: 110px;
     width: 100%;
   }
+
+  input[type="submit"] {
+    margin-top: 15px;
+  }
 }
 
 @media only screen and (max-width: 430px) {
@@ -276,5 +285,9 @@ th {
     padding: 17px 113.5px;
     margin-top: 110px;
     width: 100%;
+  }
+
+  input[type="submit"] {
+    margin-top: 15px;
   }
 }
