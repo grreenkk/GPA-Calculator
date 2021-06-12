@@ -83,7 +83,7 @@ function addItem(e) {
 
     setTimeout(function(){
       (sectionForm.insertBefore(paragraph, form)).remove();
-    }, 2000); 
+    }, 1000); 
 
   };
   e.preventDefault();
@@ -102,7 +102,7 @@ function removeItem(e){
   
     setTimeout(function(){
       (sectionForm.insertBefore(paragraph, form)).remove();
-    }, 2000); 
+    }, 1000); 
   
     e.preventDefault();
   };
@@ -127,7 +127,7 @@ function removeAllItems(){
 
   setTimeout(function(){
     (sectionForm.insertBefore(paragraph, form)).remove();
-  }, 2000); 
+  }, 1000); 
 
 
   
