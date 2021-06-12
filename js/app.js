@@ -129,6 +129,11 @@ function removeAllItems(){
     (sectionForm.insertBefore(paragraph, form)).remove();
   }, 1000); 
 
+  if (course_code.disabled || unit.disabled || grade.disabled){
+    course_code.disabled = false;
+    unit.disabled = false;
+    grade.disabled = false;
+  }
 
   
 }
@@ -154,6 +159,10 @@ function calculateGP(){
     loading.style.display = "none";
     result.style.display = "block";
   }, 1500); 
+
+  course_code.disabled = true;
+  unit.disabled = true;
+  grade.disabled = true
 
 }
 
