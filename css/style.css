@@ -258,6 +258,11 @@ th {
   input[type="submit"] {
     margin-top: 15px;
   }
+
+  label {
+    font-size: 70%;
+    margin-left: 1px;
+  }
 }
 
 .calculate-gp {
@@ -271,6 +276,11 @@ th {
     padding: 17px 113.5px;
     margin-top: 110px;
     width: 100%;
+  }
+
+  label {
+    font-size: 70%;
+    margin-left: 1px;
   }
 
   input[type="submit"] {
@@ -289,5 +299,10 @@ th {
 
   input[type="submit"] {
     margin-top: 15px;
+  }
+
+  label {
+    font-size: 70%;
+    margin-left: 1px;
   }
 }
