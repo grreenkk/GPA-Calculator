@@ -142,7 +142,7 @@ th {
 }
 
 .error {
-  background-color: red;
+  background-color: rgb(151, 8, 8);
   color: white;
   margin-bottom: 20px;
   text-align: center;
