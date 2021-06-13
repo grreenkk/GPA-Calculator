@@ -125,9 +125,14 @@ function removeAllItems(){
   let paragraph = message('All Items deleted successfully', 'success');
   sectionForm.insertBefore(paragraph, form);
 
+  
+
   setTimeout(function(){
     (sectionForm.insertBefore(paragraph, form)).remove();
   }, 1000); 
+  setTimeout(function(){
+    location.reload();
+  }, 1100); 
 
   if (course_code.disabled || unit.disabled || grade.disabled){
     course_code.disabled = false;
